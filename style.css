@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+*
+{
+    font-family: 'Cairo';
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    scroll-behavior: smooth;
+}
+
+
+body
+{    
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+
+
+
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2C3E50;
+    color:white;
+    align-items: center;
+    padding: 10px 100px;
+    border-top: solid crimson 4px;
+    position:fixed;
+    width:100%;
+    z-index: 999;
+    transition: 1s ;
+}
+
+header:hover
+{
+    border-top: #1ABC9C solid 4px;
+}
+
+header a
+{
+    color:white;
+    text-decoration:none;
+    margin-right: 20px;
+    font-size: medium;
+    transition: ease 1s
+}
+
+header a:hover
+{
+    color:#1ABC9C;
+    font-size: 18.4px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+.cursor
+{
+    color:white;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0px 60px;
+    background-image: url(Images/chillWorking.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode:overlay;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center;
+    margin-bottom: 35px;
+}
+
+.cursor span
+{
+    color:crimson;
+}
+
+.cursor h2
+{
+    color: lightgray;
+}
+
+.cursor a
+{
+    color: white;
+    background-color: #1ABC9C;
+    text-decoration: none;
+    padding:10px;
+    border-radius: 12px; 
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: ease 0.5s;
+}
+
+.cursor a:hover
+{
+    transform: scale(1.05);
+    background-color: #2C3E50;
+}
+
+
+
+
+
+
+
+.Services h2
+{
+    text-align: center;
+}
+
+
+.Services .Container
+{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0px 145px;
+}
+
+.Services .Container .Card
+{
+    background-color:transparent;
+    border:lightgray solid;
+    box-shadow: rgba(0, 0, 0,0.35) 10px 10px 10px;
+    width: 18em;
+    height: 400px;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-right: 32px;
+}
+
+.Services  .Card i
+{
+    font-size: 46px;
+    margin-bottom: 30px;
+}
+
+.
+.Services  .Card h3
+{
+    margin-bottom: 15px;
+    color: crimson;
+    font-weight: 900;
+}
+
+.Services  .Card p
+{
+    font-weight: 710;
+}
+
+
+
+
+
+
+
+
+
+.Portfolio
+{
+    padding: 30px 100px;
+    text-align: center;
+    background-color: #2C3E50;
+}
+
+.Portfolio h2
+{
+    color: white;
+    margin-bottom: 50px;
+    border-bottom: solid crimson;
+    display: inline-block;
+}
+
+.Portfolio .container
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.Portfolio .card
+{
+    background-color: lightpink;
+    border: solid;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    width: 18em;
+    margin-bottom: 30px;
+    overflow:hidden;
+}
+
+.Portfolio .card img
+{
+    width: 100%;
+    object-fit: cover;
+    height: 13em;
+    
+}
+
+.Portfolio .card button
+{
+    border-radius: 10px;
+    color:white;
+    background-color: rgb(227, 79, 108);
+    padding: 0px 8px;
+    border:none;
+    font-weight: 700;
+}
+
+.Portfolio .card p
+{  
+    font-weight: 700;
+}
+
+
+
+
+
+
+.Course
+{
+    padding: 110px;
+    align-items: center;
+    display: flex;
+}
+
+.Course-img
+{
+    width: 40%;
+    padding: 5px 12px;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 40%);
+}
+
+.Course-img-rtl
+{
+    margin-left: 30px !important;
+    margin-right: 0px !important;
+}
+
+.Course-desc
+{
+    width: 60%;
+}
+
+.Course-desc h3
+{
+    color: crimson;
+}
+
+.Course-desc p
+{
+    text-align: center;
+    font-size: 15spx;
+}
+
+
+.Members
+{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    background-image: url(Images/HunterxHunter.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+    background-blend-mode:overlay;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.Members img
+{
+    margin-right: 50px;
+    width: 18em;
+    height: 18em;
+    border: white solid ;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Members img:hover
+{
+    transform: translate(42px, 18px); 
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: crimson; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1ABC9C; 
+  }
+
+
+
+
+
+  .UP
+  {
+    position:fixed;
+    bottom: 10px;
+    right: 15px;
+    background-color: crimson;
+    border-radius: 50%;
+    padding:3px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+  }
+
+  .UP:hover
+  {
+    background-color: #1ABC9C;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .Contact
+  {
+    background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+    padding: 100px;
+    text-align: center;
+  }
+
+  .Contact h2
+  {
+    color:white;
+    border-bottom: solid;
+    display: inline-block;
+    margin-bottom: 50px;
+    
+  }
+
+  .InputForm
+  {
+    border:solid;
+    margin-bottom: 20px;
+    position:relative;
+    width: 40%;
+    margin-right: 30px;
+  }
+
+  .InputForm input
+  {
+    border:none;
+    outline: none;
+    border-bottom: solid #1ABC9C; 
+    padding: 0px 5px;
+    width:100%;
+    height:40px;
+  }
+
+  .InputForm input:focus~label,
+  .InputForm input:valid~label
+  {
+    bottom: 24px;
+
+  }
+
+  .InputForm label
+  {
+    font-size: 12px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    transition: 0.5s ease;
+    pointer-events: none;
+  }
+
+
+
+  .Contact .container
+  {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 150px;    
+  }
+
+  #Message
+  {
+    width: 84%;
+  }
+
+  #Send
+  {
+    padding: 5px 20px;
+    border-radius: 18px;
+    border: solid #1aaac7;
+    background-color: #25a5e5;
+    color: white;
+    transition: 0.5 ease;
+  }
+
+  #Send:hover
+  {
+    transform: scale(1.1);
+  }
+
+
+
+
+
+
+
+
+
+.Map
+{
+    background-color:#cccccc38;
+    padding:50px;
+    min-height: 100vh;
+}
+
+.Map div
+{
+    padding:7px;
+    background-color: white;
+    border: solid white;
+    box-shadow: 2px 2px 15px;
+}
+
+.Map div iframe
+{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
